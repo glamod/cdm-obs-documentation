@@ -25,7 +25,7 @@ pushd "${working_directory}" # use pushd so we can return to current directory e
 # now set up
 git init
 git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-git checkout -b pages
+git checkout -b docs
 touch .nojekyll
 # add readme
 cat > README.md <<EOF
