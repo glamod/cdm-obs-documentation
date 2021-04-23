@@ -39,7 +39,7 @@ git add .
 git commit -am "update of pages"
 
 # deploy
-git push deploy pages --force
+git push deploy docs --force
 
 # return to start dir
 popd
