@@ -2,12 +2,12 @@
 
 
 apt-get update
-apt-get -y install svn git rsync python3-sphinx python3-sphinx-rtd-theme
+apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme
 
 # Build documentation
 # ===================
 make -C ./docs clean # clean previous version
-./build_tables.sh # we need to update code tables (this pulls tables from another repo, converts etc)
+#./build_tables.sh # we need to update code tables (this pulls tables from another repo, converts etc)
 make -C ./docs html # now build the docs
 
 # setup environment
