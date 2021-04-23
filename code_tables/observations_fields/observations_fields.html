@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>observations_fields &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="observing_frequency" href="../observing_frequency/observing_frequency.html" />
+    <link rel="prev" title="observation_value_significance" href="../observation_value_significance/observation_value_significance.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../logical.html">Logical data model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../physical.html">Physical data model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../table_defs/index.html">Table Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Code tables</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../application_area/application_area.html">application_area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../automation_status/automation_status.html">automation_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../calibration_status/calibration_status.html">calibration_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../communication_method/communication_method.html">communication_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../conversion_flag/conversion_flag.html">conversion_flag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../conversion_method/conversion_method.html">conversion_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crs/crs.html">crs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_policy_licence/data_policy_licence.html">data_policy_licence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_present/data_present.html">data_present</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../duplicate_status/duplicate_status.html">duplicate_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../duration/duration.html">duration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../events_at_station/events_at_station.html">events_at_station</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../header_fields/header_fields.html">header_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../homogenisation_method/homogenisation_method.html">homogenisation_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../homogenisation_operator/homogenisation_operator.html">homogenisation_operator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../id_scheme/id_scheme.html">id_scheme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../instrument_exposure_quality/instrument_exposure_quality.html">instrument_exposure_quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kind/kind.html">kind</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../location_method/location_method.html">location_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../location_quality/location_quality.html">location_quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meaning_of_time_stamp/meaning_of_time_stamp.html">meaning_of_time_stamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../method_of_estimating_uncertainty/method_of_estimating_uncertainty.html">method_of_estimating_uncertainty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../observation_code_table/observation_code_table.html">observation_code_table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../observation_value_significance/observation_value_significance.html">observation_value_significance</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">observations_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../observing_frequency/observing_frequency.html">observing_frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../observing_method/observing_method.html">observing_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../observing_programme/observing_programme.html">observing_programme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platform_sub_type/platform_sub_type.html">platform_sub_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platform_type/platform_type.html">platform_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../processing_code/processing_code.html">processing_code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../processing_level/processing_level.html">processing_level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../product_level/product_level.html">product_level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../product_status/product_status.html">product_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../profile_configuration_codes/profile_configuration_codes.html">profile_configuration_codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../profile_configuration_fields/profile_configuration_fields.html">profile_configuration_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../profile_type/profile_type.html">profile_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qc_method/qc_method.html">qc_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quality_flag/quality_flag.html">quality_flag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../region/region.html">region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../report_processing_codes/report_processing_codes.html">report_processing_codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../report_processing_level/report_processing_level.html">report_processing_level</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../report_type/report_type.html">report_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../role/role.html">role</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sampling_strategy/sampling_strategy.html">sampling_strategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sea_level_datum/sea_level_datum.html">sea_level_datum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../secondary_variable/secondary_variable.html">secondary_variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sensor_configuration_codes/sensor_configuration_codes.html">sensor_configuration_codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sensor_configuration_fields/sensor_configuration_fields.html">sensor_configuration_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../source_configuration_codes/source_configuration_codes.html">source_configuration_codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../source_configuration_fields/source_configuration_fields.html">source_configuration_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../source_format/source_format.html">source_format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spatial_representativeness/spatial_representativeness.html">spatial_representativeness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_time/standard_time.html">standard_time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../station_configuration_codes/station_configuration_codes.html">station_configuration_codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../station_configuration_fields/station_configuration_fields.html">station_configuration_fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../station_type/station_type.html">station_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sub_region/sub_region.html">sub_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time_quality/time_quality.html">time_quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../time_reference/time_reference.html">time_reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../traceability/traceability.html">traceability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uncertainty_method/uncertainty_method.html">uncertainty_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../uncertainty_type/uncertainty_type.html">uncertainty_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../units/units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../update_frequency/update_frequency.html">update_frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../z_coordinate_method/z_coordinate_method.html">z_coordinate_method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../z_coordinate_type/z_coordinate_type.html">z_coordinate_type</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Code tables</a> &raquo;</li>
+        
+      <li>observations_fields</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/code_tables/observations_fields/observations_fields.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="observations-fields">
+<h1>observations_fields<a class="headerlink" href="#observations-fields" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>field_id</td>
+<td>field_name</td>
+<td>kind</td>
+<td>description</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>geometric pressure offset correction</td>
+<td>2</td>
+<td>‘Yes’ if the correction was applied.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>pressure sensor offset</td>
+<td>2</td>
+<td>Offset value applied (Pa).</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ozone reference number</td>
+<td>2</td>
+<td>Identifier number for the ozonesonde.</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>KI solution content</td>
+<td>2</td>
+<td>Details of the KI solution content.</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>preflight summary solution volume</td>
+<td>2</td>
+<td>Volume of cathode solution (cm3 or cc).</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>cathode soln volume correction</td>
+<td>2</td>
+<td>‘Yes’ if the correction was applied.</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>preflight summary pump flow rate</td>
+<td>2</td>
+<td>The pump flow rate (ml/sec), measured during the conditioning procedures, is approx.  constant up to 100 hPa and decreases steadily to the top of the atmosphere due to instrumental degradation at low pressures.</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>flowrate correction</td>
+<td>2</td>
+<td>Flowrate correction in (%).</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>pump temperature correction</td>
+<td>2</td>
+<td>‘Yes’ if the pump temerpature correction was applied.</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>sampling method type ozone free air</td>
+<td>2</td>
+<td>The background current (A) is the residual current measured by the sonde when sampling ozone-free air.</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>applied pump efficiency factors</td>
+<td>2</td>
+<td>Reference for the applied pump efficiency factors.</td>
+</tr>
+<tr class="row-odd"><td>12</td>
+<td>conversion transfer function</td>
+<td>2</td>
+<td>Transfer function used to convert measurements made with any of the various combinations to one of the two WMO recommended standard preparations (1.0 for SP and 0.5% for EN for the KI concentrations of the cathode electrolyte).</td>
+</tr>
+<tr class="row-even"><td>13</td>
+<td>sample temperature</td>
+<td>2</td>
+<td>Measured ozonesonde pump temperature in degrees Celsius (C).</td>
+</tr>
+<tr class="row-odd"><td>14</td>
+<td>sonde current</td>
+<td>2</td>
+<td>Measured ozonesonde cell current (A).</td>
+</tr>
+<tr class="row-even"><td>15</td>
+<td>pump motor current</td>
+<td>2</td>
+<td>Electrical current (mA) measured through the pump motor.</td>
+</tr>
+<tr class="row-odd"><td>16</td>
+<td>pump motor voltage</td>
+<td>2</td>
+<td>Applied voltage (V) measured across the pump motor.</td>
+</tr>
+<tr class="row-even"><td>17</td>
+<td>wl code</td>
+<td>2</td>
+<td>WCode to designate the wavelength pair(s) used for total ozone measurement.</td>
+</tr>
+<tr class="row-odd"><td>18</td>
+<td>obs code</td>
+<td>2</td>
+<td>Code to designate the type of total ozone measurement.</td>
+</tr>
+<tr class="row-even"><td>19</td>
+<td>m mu</td>
+<td>2</td>
+<td>The harmonic mean of the relative slant path through the ozone layer at 22Km for each of the observations used to compute the daily value.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../observing_frequency/observing_frequency.html" class="btn btn-neutral float-right" title="observing_frequency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../observation_value_significance/observation_value_significance.html" class="btn btn-neutral float-left" title="observation_value_significance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
