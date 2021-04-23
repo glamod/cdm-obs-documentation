@@ -29,7 +29,7 @@
 "082","sievert","Sv","m2 s-2"
 "110","degree (angle)","deg","NULL"
 "111","minute (angle)","'","NULL"
-"112","second (angle)",""","NULL"
+"112","second (angle)","'","NULL"
 "120","litre","l or L","NULL"
 "130","minute (time)","min","NULL"
 "131","hour","h","NULL"

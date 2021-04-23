@@ -1,5 +1,5 @@
 Code tables
-===========
+=================================
 .. toctree::
 	application_area/application_area
 	automation_status/automation_status
@@ -26,7 +26,7 @@ Code tables
 	observation_code_table/observation_code_table
 	observation_value_significance/observation_value_significance
 	observations_fields/observations_fields
-	observed_variable/index
+	observed_variable/observed_variable
 	observing_frequency/observing_frequency
 	observing_method/observing_method
 	observing_programme/observing_programme

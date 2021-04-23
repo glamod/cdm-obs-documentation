@@ -8,7 +8,7 @@ pushd "${work_dir}"
 svn checkout https://github.com/glamod/common_data_model/trunk/tables
 pushd ./tables
 echo "Code tables" > index.rst
-echo "===========" >> index.rst
+echo "=================================" >> index.rst
 echo ".. toctree::" >> index.rst
 # now need to convert fromtabseperated to csv
 FILES=`ls *.dat`
@@ -17,14 +17,18 @@ for f in $FILES
 do
   tablename=`echo $f | cut -d'.' -f1`
   mkdir "${tablename}"
-  cat "${tablename}.dat" | awk '\
+  cat "${tablename}.dat" | perl -pe "s/\"/'/g" | awk '\
   BEGIN {FS="\t"};
-  { for (i=1; i < NF ; i++){printf "\"%s\",", $i } }
+  {
+    for (i=1; i < NF ; i++){
+      printf "\"%s\",", $i
+    }
+  }
   { printf "\"%s\"\n", $NF }
   END{}
-  ' > "./${tablename}/${tablename}.csv"
+  ' | perl -pe 's/(\\\[)(.*?)(\\])/:math:`\2`/g;s/(\$\{)(.*?)(\}\$)/:math:`\2`/g' > "./${tablename}/${tablename}.csv"
   echo "${tablename}" > "./${tablename}/${tablename}.rst"
-  echo "============" >> "./${tablename}/${tablename}.rst"
+  echo "==================================" >> "./${tablename}/${tablename}.rst"
   echo ".. csv-table::" >> "./${tablename}/${tablename}.rst"
 	echo "	:file: ${tablename}.csv" >> "./${tablename}/${tablename}.rst"
   echo "	${tablename}/${tablename}" >> index.rst
