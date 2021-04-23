@@ -28,7 +28,7 @@ git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSIT
 git checkout -b pages
 touch .nojekyll
 # add readme
-cat > README.md <<EOF 
+cat > README.md <<EOF
 Branch containing documentation for repo.
 EOF
 
