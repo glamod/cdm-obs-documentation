@@ -19,7 +19,7 @@ git config --global user.email "dyb@noc.ac.uk"
 working_directory=`mktemp -d`
 
 # copy docs to working directory and cd there
-rsync -av "docs/build/html/" "${working_directory}/"  
+rsync -av "docs/build/html/" "${working_directory}/"
 pushd "${working_directory}" # use pushd so we can return to current directory easily
 
 # now set up
@@ -28,7 +28,7 @@ git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSIT
 git checkout -b pages
 touch .nojekyll
 # add readme
-cat > README.md <<EOF
+cat > README.md <<EOF 
 Branch containing documentation for repo.
 EOF
 
