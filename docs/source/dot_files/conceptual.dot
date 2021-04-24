@@ -1,0 +1,107 @@
+digraph {
+  #node [color=white]
+  node [margin="0.01" shape=plaintext]
+  rankdir=LR;
+  n1, n2, n3, n4, n5 [style=invis]
+  header_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+                                <TR><TD PORT="head" COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">header_table</TD></TR>
+                                <TR><TD PORT="header">Header information</TD></TR>
+                                <TR><TD PORT="source">Source information</TD></TR>
+                             </TABLE>>]
+
+  observations_table [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK">
+                                <TR><TD PORT="head" COLSPAN="1" ALIGN="center" BGCOLOR="lightgray">observations_table</TD></TR>
+                                <TR><TD PORT="sensor">Observed parameter and sensor information</TD></TR>
+                             </TABLE>>]
+
+
+  station_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">station_configuration</TD></TR>
+                                <TR><TD>Detailed information on the station reporting the data.<BR ALIGN="LEFT"/>
+Information changes infrequently, required fields expected<BR ALIGN="LEFT"/>
+to be common across reports from different networks or <BR ALIGN="LEFT"/>observing programmes.<BR ALIGN="LEFT"/><BR/>&nbsp;
+<BR ALIGN="LEFT"/>
+Elements will be repeated in the observations tables <BR ALIGN="left"/>for ease of filtering.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+profile_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">profile_configuration</TD></TR>
+                                <TR><TD>Detailed information on the profile (atmospheric / oceanic).<BR ALIGN="LEFT"/>
+Expected to change with every report. Fields will be<BR ALIGN="LEFT"/>
+dependent on profile type.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+source_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">source_configuration</TD></TR>
+                                <TR><TD>Detailed information on the original source of the data.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+sensor_configuration [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">sensor_configuration</TD></TR>
+                                <TR><TD>
+Detailed information on the instrument / sensor making.<BR ALIGN="LEFT"/>
+the observation. Fields reported will depend on variable<BR ALIGN="LEFT"/>
+and observation type.<BR ALIGN="LEFT"/></TD></TR>
+                             </TABLE>>]
+
+qc_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">qc_fields</TD></TR>
+                                <TR><TD>Additional information on QC applied to observation.</TD></TR></TABLE>>]
+
+uncertainty_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">uncertainty_fields</TD></TR>
+                                <TR><TD>
+Additional information on uncertainty budget <BR ALIGN="LEFT"/>
+used to set standard_uncertainty field.</TD></TR></TABLE>>]
+
+
+homogenisation_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">homogenisation_fields</TD></TR>
+                                <TR><TD>Additional information on homogenisation applied to observation.</TD></TR></TABLE>>]
+
+station_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">station_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for station_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+source_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">source_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for source_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+sensor_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">sensor_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for sensor_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+profile_config_optional [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">profile_configuration_optional</TD></TR>
+                                <TR><TD>Additional optional elements for profile_configuration<BR ALIGN="LEFT"/>
+configuration in EAV based table</TD></TR></TABLE>>]
+
+
+  {
+    rank=same;
+    header_table;
+    observations_table;
+  }
+
+  n1 -> n2 [arrowtail = dot , arrowhead = crow, dir = both, label = "one to many relationship"];
+  n2 -> n3 [arrowhead = dot , arrowtail = crow, dir = both, label = "many to one relationship"];
+  n4 -> n5 [arrowhead = dot , arrowtail = dot , dir = both, label = "one to one relationship"];
+
+  header_table -> observations_table [arrowtail=dot, arrowhead=crow, dir=both, label="      "];
+  header_table:header -> station_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:header -> profile_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:source -> source_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+
+  observations_table:head -> qc_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -> uncertainty_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -> homogenisation_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:sensor -> sensor_configuration:head [arrowtail=crow, dir=both, arrowhead=dot];
+
+  station_configuration:head -> station_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  source_configuration:head -> source_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  profile_configuration:head -> profile_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  sensor_configuration:head -> sensor_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+}

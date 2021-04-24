@@ -12,7 +12,6 @@ GLAMOD Common Data Model
 
    introduction
    conceptual
-   logical
    physical
    table_defs/index
    code_tables/index
