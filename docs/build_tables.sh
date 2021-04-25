@@ -38,5 +38,5 @@ rm *.dat
 popd
 popd
 
-cp -R "${work_dir}/tables/"* ./source/code_tables/
+cp -R "${work_dir}/tables/"* ./source/tables/code_tables/
 exit 0
