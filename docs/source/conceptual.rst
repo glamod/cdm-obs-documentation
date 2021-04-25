@@ -11,7 +11,7 @@ For those observations from profiles, e.g. radiosonde or ocean profile measureme
 Additional quality control, homogenisation and uncertinty estimates can be provided through the respective tables linked to the observations table.
 Finally, optional information can be provided through the optional tables.
 
-All of these tables are described further on the logical and physical data model pages.
+All of these tables are described further on the physical data model pages.
 
 
 .. graphviz:: dot_files/conceptual.dot

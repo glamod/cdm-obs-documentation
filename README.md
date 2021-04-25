@@ -1,3 +1,3 @@
-# common_data_model_new
+# CDM-Obs documentation
 
-Repository to replace existing commond_data_model repository after significant tidy of documentation. CDM should be unchanged.
+Repository created to act as online documentation for CDM-Obs.
