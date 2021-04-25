@@ -7,14 +7,14 @@ GLAMOD Common Data Model
 =============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    introduction
    conceptual
    physical
-   table_defs/index
-   code_tables/index
+   tables/table_defs/index
+   tables/code_tables/index
 
 
 Indices and tables

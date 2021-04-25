@@ -19,7 +19,12 @@ However, this has been significantly modified and expanded to include comprehens
 Within the data model the weather reports are split across two different record types following the ODBv1 approach.
 Header records provide information common to all observations within a weather report.
 Linked records contain the observations, with a single measurand or observed variable per record.
-Additional linked records contain the metadata, an overview is provided on the conceptual model page and the full model is described on the physical data model page.
+Additional linked records contain the metadata.
+Where possible, we have tried to keep the vocabulary used in existing standards.
+For example, at the time of initial development the code tables included in this data model were directly linked to those from the WIGOS Metadata Standard (WMDS) and BUFR but it should be noted that some of these may have since changed (particularly the WMDS).
+We have also tried to account for the need to extract both the observations and metadata into different standards, for example it should be possible to map the data contained in the data model to the ISO19135 and ISO19139 standards.
+
+An overview is provided on the conceptual model page and the full model is described on the physical data model page.
 
 .. toctree::
    :maxdepth: 1
@@ -27,5 +32,5 @@ Additional linked records contain the metadata, an overview is provided on the c
 
    conceptual
    physical
-   table_defs/index
-   code_tables/index
+   tables/table_defs/index
+   tables/code_tables/index
