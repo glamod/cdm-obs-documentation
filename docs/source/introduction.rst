@@ -3,7 +3,8 @@ Introduction
 
 This site documents a common data model for in situ climate observations (CDM-Obs) developed as part of the C3S 311a and C3S 311c services.
 Whilst hosted by the GLAMOD organisation on GitHub the site has been developed outside of the C3S services and is an unofficial resource.
-The main repository for the common data model, including the pdf documentation can be found at: https://github.com/glamod/common_data_model.
+The main repository for the common data model can be found at: https://github.com/glamod/common_data_model.
+The pdf documentation is also provided as part of this repository https://github.com/glamod/common_data_model/blob/master/cdm_latest.pdf.
 
 The data model developed is intended to provide a single harmonised model and vocabulary for in situ meteorological observations provided through the C3S services.
 This includes both meteorological observations made at the surface and observations made throughout the atmosphere.
@@ -19,3 +20,12 @@ Within the data model the weather reports are split across two different record 
 Header records provide information common to all observations within a weather report.
 Linked records contain the observations, with a single measurand or observed variable per record.
 Additional linked records contain the metadata, an overview is provided on the conceptual model page and the full model is described on the physical data model page.
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Jump to:
+
+   conceptual
+   physical
+   table_defs/index
+   code_tables/index
