@@ -30,6 +30,7 @@ do
   echo "==================================" >> "./${tablename}/${tablename}.rst"
   echo ".. csv-table::" >> "./${tablename}/${tablename}.rst"
 	echo "	:file: ${tablename}.csv" >> "./${tablename}/${tablename}.rst"
+	echo "	:header-rows: 1" >> "./${tablename}/${tablename}.rst"
   echo "	${tablename}/${tablename}" >> index.rst
   ((table_count=table_count+1))
 done
