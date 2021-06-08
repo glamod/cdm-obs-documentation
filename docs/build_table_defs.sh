@@ -17,7 +17,7 @@ do
   tablename=`echo $f | cut -d'.' -f1`
   echo "${tablename}"
   mkdir "${tablename}"
-  cat "${tablename}.csv" | perl -pe "s/\"/'/g" | awk '\
+  cat "${tablename}.csv" | grep -E -v "^#" | perl -pe "s/\"/'/g" | awk '\
   BEGIN {FS="\t"};
   {
     for (i=1; i < NF ; i++){

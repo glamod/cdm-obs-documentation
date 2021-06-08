@@ -1,5 +1,3 @@
-"# Description: Original report type for this report / observaiton"
-"# Source:"
 "element_name","kind","external_table","description"
 "type","int(pk)"," ","primary key for table"
 "abbreviation","varchar"," ","abbreviation used to indicate report type (e.g. SHIP)"

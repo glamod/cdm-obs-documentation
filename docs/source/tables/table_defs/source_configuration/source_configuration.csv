@@ -1,5 +1,3 @@
-"# Description: Table defining additional information on data sources","","","",""
-"# Source:"
 "element_name","type","external_table","description"
 "source_id","varchar (pk) ","","Unique record ID for dataset"
 "product_id","varchar","","ID for product"

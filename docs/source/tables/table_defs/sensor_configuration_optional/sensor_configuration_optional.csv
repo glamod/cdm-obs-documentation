@@ -1,5 +1,3 @@
-"# Description:"
-"# Source:"
 "element_name","kind","external_table","description"
 "sensor_id","varchar ","sensor_configuration:sensor_id","Link to sensor for which this entry corresponds"
 "kind","int","kind:kind","Enumerated data type (numeric, int, etc)"

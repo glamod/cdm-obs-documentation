@@ -1,5 +1,3 @@
-"# Description:","","","","","",""
-"# Source:"
 "element_name","kind","external_table","description"
 "field_id","varchar (pk)","profile_configuration_fields:field_id","Link to field code is for"
 "field_name","varchar"," ","Name of field"

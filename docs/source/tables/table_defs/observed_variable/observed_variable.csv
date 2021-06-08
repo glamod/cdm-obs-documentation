@@ -1,5 +1,3 @@
-"# Description:"
-"# Source:"
 "element_name","kind","external_table","description"
 "variable","int(pk)"," ","primary key for table"
 "parameter_group","varchar"," ","parameter group (e.g. temperature, pressure) that this variable belongs to"

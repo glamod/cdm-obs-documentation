@@ -1,5 +1,3 @@
-"# Descripion: table defining elements in main observations table","","","",""
-"# Source:"
 "element_name","kind","external_table","description"
 "observation_id","varchar (pk)","","unique ID for observation"
 "report_id","varchar","header_table:report_id","Link to header information"

@@ -1,5 +1,3 @@
-"# Description: Type of uncertainty"
-"# Source:"
 "element_name","kind","external_table","description"
 "uncertainty_type","int (pk)","","Primary key"
 "name","varchar","","short name describing uncertainty type (e.g. random uncertainty)"

@@ -1,5 +1,3 @@
-"# Description:"
-"# Source:"
 "element_name","kind","external_table","description"
 "code","int (pk)"," ","primary key for table"
 "abbreviation","varchar"," ","abbreviation used to indicate processing code"

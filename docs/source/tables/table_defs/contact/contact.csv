@@ -1,5 +1,3 @@
-"# Description:"
-"# Source:"
 "element_name","kind","external_table","description"
 "contact_id","varchar (pk)"," ","primary key"
 "title","varchar"," ","Title of contact (e.g. Mr, Mrs, Dr. etc)"

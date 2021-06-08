@@ -1,5 +1,3 @@
-"# Description: Code tables used to decode obseravtions when encoded"
-"# Source:"
 "element_name","kind","external_table","description"
 "code_table","int (pk)"," ","Primary key for table"
 "code_table_scheme","varchar"," ","External scheme used for code table (e.g. BUFR)"

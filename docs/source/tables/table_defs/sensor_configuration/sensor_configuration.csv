@@ -1,5 +1,3 @@
-"# Description: definition of table specifying sensor configuration","","","",""
-"# Source:"
 "element_name","type","external_table","description"
 "sensor_id","varchar (pk)","","Unique ID for this instrument"
 "observing_method","int","observing_method:method","Method (instrumental, estimated / visual, computed) by which observation made"

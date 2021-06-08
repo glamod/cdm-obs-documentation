@@ -1,5 +1,3 @@
-"# Description: Processing level applied to observation"
-"# Source: WIGOS 7-06"
 "element_name","kind","external_table","description"
 "level","int (pk)"," ","primary key for table"
 "name","varchar"," ","Name commonly used to indicate level of processing"

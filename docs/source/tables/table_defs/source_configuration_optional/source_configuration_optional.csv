@@ -1,5 +1,3 @@
-"# Description:"
-"# Source:"
 "element_name","kind","external_table","description"
 "source_id","varchar ","source_configuration:source_id","Link to source for which this entry corresponds"
 "kind","int","kind:kind","Enumerated data type (numeric, int, etc)"
