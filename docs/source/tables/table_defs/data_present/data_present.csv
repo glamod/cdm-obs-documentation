@@ -1,0 +1,5 @@
+"# Description:"
+"# Source:"
+"element_name","kind","external_table","description"
+"flag","int(pk)"," ","Primary key for table"
+"description","varchar"," ","Decoded value indicating presence of additional data"

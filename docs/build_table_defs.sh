@@ -4,19 +4,20 @@ work_dir=`mktemp -d`
 echo "${work_dir}"
 pushd "${work_dir}"
 # First download current version of tables from github
-svn checkout https://github.com/glamod/common_data_model/trunk/tables
-pushd ./tables
-echo "Code tables" > index.rst
+svn checkout https://github.com/glamod/common_data_model/trunk/table_definitions/
+pushd ./table_definitions
+echo "Table definitions" > index.rst
 echo "=================================" >> index.rst
 echo ".. toctree::" >> index.rst
 # now need to convert from tab seperated to csv
-FILES=`ls *.dat`
+FILES=`ls *.csv`
 table_count=1
 for f in $FILES
 do
   tablename=`echo $f | cut -d'.' -f1`
+  echo "${tablename}"
   mkdir "${tablename}"
-  cat "${tablename}.dat" | perl -pe "s/\"/'/g" | awk '\
+  cat "${tablename}.csv" | perl -pe "s/\"/'/g" | awk '\
   BEGIN {FS="\t"};
   {
     for (i=1; i < NF ; i++){
@@ -33,9 +34,9 @@ do
   echo "	${tablename}/${tablename}" >> index.rst
   ((table_count=table_count+1))
 done
-rm *.dat
+rm *.csv
 popd
 popd
-cp -R "${work_dir}/tables/"* ./source/tables/code_tables/
+cp -R "${work_dir}/table_definitions/"* ./source/tables/table_defs/
 
 exit 0

@@ -1,0 +1,5 @@
+"# Description: method by which observation made"
+"# Source:"
+"element_name","kind","external_table","description"
+"method","int (pk)"," ","primary key for table"
+"description","varchar"," ","decoded value indicating method of observing (e.g. measured, estimating or computed)"
