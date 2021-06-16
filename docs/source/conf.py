@@ -60,3 +60,5 @@ html_context = {
         '_static/theme_overrides.css',  # overrides for wide tables in RTD theme
         ],
     }
+
+formats = ['pdf']

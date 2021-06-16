@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-GLAMOD Common Data Model
+GLAMOD Common Data Model (CDM-OBS)
 =============================================
 
 .. toctree::
@@ -16,9 +16,6 @@ GLAMOD Common Data Model
    tables/code_tables/index
 
 
-Indices and tables
+Search
 ==================
-
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
