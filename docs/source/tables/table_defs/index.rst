@@ -1,4 +1,4 @@
-Table definitions
+Data tables
 =================================
 .. toctree::
 	era5fb_table/era5fb_table
