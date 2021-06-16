@@ -1,5 +1,0 @@
-"element_name","kind","external_table","description"
-"units","int(pk)"," ","primary key"
-"name","varchar"," ","name of units"
-"abbreviation","varchar"," ","conventional abbreviation in ASCII"
-"base_units","varchar"," ","definition in base units"

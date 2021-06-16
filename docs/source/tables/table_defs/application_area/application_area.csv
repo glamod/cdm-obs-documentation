@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"application_area","int(pk)"," ","Unique ID for code entry"
-"description","varchar"," ","Description of application area"

@@ -1,4 +1,0 @@
-"element_name","kind","external_table","description"
-"meaning","int(pk)"," ","primary key"
-"name","varchar"," ","abbreviation / simple name for meaning of time stamp"
-"description","varchar"," ","definition of meaning of time stamp"

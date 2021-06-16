@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"method","int (pk)"," ","primary key, coded value"
-"description","varchar"," ","description of method used to determine z location"

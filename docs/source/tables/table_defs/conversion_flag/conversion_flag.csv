@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"flag","int(pk)"," ","primary key"
-"description","varchar"," ","Description of whether the original value has been converted or decoded and is stored in the observed variable element"

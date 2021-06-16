@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"quality","int(pk)"," ","primary key, coded value"
-"description","varchar"," ","decoded value expressing quality of time / date information"

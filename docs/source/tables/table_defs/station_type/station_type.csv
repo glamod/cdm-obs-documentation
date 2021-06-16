@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"type","int (pk)"," ","primary key for table, coded value"
-"description","varchar"," ","decoded station type"

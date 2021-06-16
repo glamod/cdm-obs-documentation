@@ -1,3 +1,0 @@
-"elemet_name","kind","external_table","description"
-"method","int(pk)"," ","Primary key / unique ID for entry"
-"description","varchar"," ","Decoded value / text description of communication method"

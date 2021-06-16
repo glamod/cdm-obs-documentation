@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"scheme","int(pk)"," ","Primary key for table"
-"description","varchar"," ","Decoded value / description of ID scheme used to report the station ID"

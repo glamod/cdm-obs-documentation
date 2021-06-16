@@ -1,3 +1,0 @@
-"element_name","kind","external_table","description"
-"time","int(pk)"," ","primary key for table, encoded value"
-"description","varchar"," ","decoded observing time, e.g. 12 UTC"

@@ -1,4 +1,0 @@
-"element_name","kind","external_table","description"
-"role","int(pk)"," ","primary key for table"
-"entry","varchar","","short name for role"
-"description","varchar"," ","definition of role"

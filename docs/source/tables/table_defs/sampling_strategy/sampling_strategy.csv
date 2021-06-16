@@ -1,4 +1,0 @@
-"element_name","kind","external_table","description"
-"strategy","int (pk)"," ","primary key for table"
-"name","varchar"," ","name or abbreviation used to indicate sampling strategy"
-"description","varchar"," ","definition of sampling strategy"
