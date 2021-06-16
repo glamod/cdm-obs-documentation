@@ -12,8 +12,7 @@ GLAMOD Common Data Model
 
    introduction
    conceptual
-   physical
-   tables/table_defs/index
+   tables/data_tables/index
    tables/code_tables/index
 
 
