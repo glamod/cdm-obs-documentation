@@ -1,6 +1,6 @@
 Code tables
 =================================
-Downlaod all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
+Download all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
 
 .. toctree::
 	application_area/application_area
