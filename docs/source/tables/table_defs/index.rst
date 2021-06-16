@@ -1,90 +1,24 @@
 Table definitions
 =================================
 .. toctree::
-	adjustment/adjustment
-	application_area/application_area
-	automation_status/automation_status
-	calibration_status/calibration_status
-	communication_method/communication_method
-	contact/contact
-	conversion_flag/conversion_flag
-	conversion_method/conversion_method
-	crs/crs
-	data_policy_licence/data_policy_licence
-	data_present/data_present
-	duplicate_status/duplicate_status
-	duration/duration
 	era5fb_table/era5fb_table
-	events_at_station/events_at_station
-	header_fields/header_fields
-	header_optional/header_optional
+	header_optional/header_optional #
 	header_table/header_table
-	homogenisation_method/homogenisation_method
-	homogenisation_operator/homogenisation_operator
-	homogenisation_table/homogenisation_table
-	id_scheme/id_scheme
-	instrument_exposure_quality/instrument_exposure_quality
-	kind/kind
-	location_method/location_method
-	location_quality/location_quality
-	meaning_of_time_stamp/meaning_of_time_stamp
-	method_of_estimating_uncertainty/method_of_estimating_uncertainty
-	observation_code_table/observation_code_table
-	observation_value_significance/observation_value_significance
-	observations_fields/observations_fields
+	homogenisation_table/homogenisation_table #
 	observations_optional/observations_optional
-	observations_table/observations_table
-	observed_variable/observed_variable
-	observing_frequency/observing_frequency
-	observing_method/observing_method
-	observing_programme/observing_programme
-	organisation/organisation
-	platform_sub_type/platform_sub_type
-	platform_type/platform_type
-	processing_code/processing_code
-	processing_level/processing_level
-	product_level/product_level
-	product_status/product_status
-	profile_configuration/profile_configuration
-	profile_configuration_codes/profile_configuration_codes
-	profile_configuration_fields/profile_configuration_fields
+	observations_table/observations_table #
+	profile_configuration/profile_configuration #
 	profile_configuration_optional/profile_configuration_optional
-	profile_type/profile_type
 	qc_method/qc_method
 	qc_table/qc_table
-	quality_flag/quality_flag
-	region/region
-	report_processing_codes/report_processing_codes
-	report_processing_level/report_processing_level
-	report_type/report_type
-	role/role
-	sampling_strategy/sampling_strategy
-	sea_level_datum/sea_level_datum
-	secondary_variable/secondary_variable
-	sensor_configuration/sensor_configuration
-	sensor_configuration_codes/sensor_configuration_codes
-	sensor_configuration_fields/sensor_configuration_fields
+	quality_flag/quality_flag #
+	sensor_configuration/sensor_configuration #
 	sensor_configuration_optional/sensor_configuration_optional
-	source_configuration/source_configuration
-	source_configuration_codes/source_configuration_codes
-	source_configuration_fields/source_configuration_fields
+	source_configuration/source_configuration #
 	source_configuration_optional/source_configuration_optional
-	source_format/source_format
-	spatial_representativeness/spatial_representativeness
-	standard_time/standard_time
-	station_configuration/station_configuration
-	station_configuration_codes/station_configuration_codes
-	station_configuration_fields/station_configuration_fields
+	station_configuration/station_configuration #
 	station_configuration_optional/station_configuration_optional
-	station_type/station_type
-	sub_region/sub_region
-	time_quality/time_quality
-	time_reference/time_reference
-	traceability/traceability
 	uncertainty_method/uncertainty_method
-	uncertainty_table/uncertainty_table
+	uncertainty_table/uncertainty_table #
 	uncertainty_type/uncertainty_type
-	units/units
-	update_frequency/update_frequency
-	z_coordinate_method/z_coordinate_method
-	z_coordinate_type/z_coordinate_type
+
