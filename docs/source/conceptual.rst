@@ -1,7 +1,7 @@
 Conceptual data model
 =====================
-The figure below show sthe conceptual data model used by the common data model, largely building on the ODB v1 data model developed by ECMWF.
-Only the primary data tables are shown, there are additional code tables but this have been omitted for brevity.
+The figure below shows the conceptual data model used by the common data model, largely building on the ODB v1 data model developed by ECMWF.
+Only the primary data tables are shown, there are additional data and code tables but this have been omitted for brevity.
 Within this data model each weather report (or record) is split across two main tables.
 The first, the header table, provides information common to all observations contained in the report.
 Examples include, inter alia, the location and time of the report, the identity of the station, events at the time of the report etc.

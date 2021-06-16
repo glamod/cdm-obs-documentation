@@ -45,7 +45,7 @@ and observation type.<BR ALIGN="LEFT"/></TD></TR>
                              </TABLE>>]
 
 qc_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
-                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">qc_fields</TD></TR>
+                                <TR><TD COLSPAN="1" ALIGN="center" BGCOLOR="lightgray" PORT="head">qc_table</TD></TR>
                                 <TR><TD>Additional information on QC applied to observation.</TD></TR></TABLE>>]
 
 uncertainty_fields [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5" COLOR="BLACK" WIDTH="200px">
