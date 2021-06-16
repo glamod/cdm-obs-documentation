@@ -1,5 +1,7 @@
 Code tables
 =================================
+Downlaod all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
+
 .. toctree::
 	application_area/application_area
 	automation_status/automation_status

@@ -12,6 +12,7 @@ echo ".. toctree::" >> index.rst
 # now need to convert from tab seperated to csv
 FILES=`ls *.dat`
 table_count=1
+mkdir all_tables
 for f in $FILES
 do
   tablename=`echo $f | cut -d'.' -f1`
@@ -26,14 +27,24 @@ do
   { printf "\"%s\"\n", $NF }
   END{}
   ' | perl -pe 's/(\\\[)(.*?)(\\])/:math:`\2`/g;s/(\$\{)(.*?)(\}\$)/:math:`\2`/g' > "./${tablename}/${tablename}.csv"
+  # file converted to csv, also add csv to temporary directory
+  cp ./${tablename}/${tablename}.csv ./all_tables/${tablename}.csv
+  # build rst file for code table
   echo "${tablename}" > "./${tablename}/${tablename}.rst"
   echo "==================================" >> "./${tablename}/${tablename}.rst"
+  echo "Download csv version :download:\`${tablename} <${tablename}.csv>\`" >> "./${tablename}/${tablename}.rst"
+  echo " " >> "./${tablename}/${tablename}.rst"
   echo ".. csv-table::" >> "./${tablename}/${tablename}.rst"
 	echo "	:file: ${tablename}.csv" >> "./${tablename}/${tablename}.rst"
 	echo "	:header-rows: 1" >> "./${tablename}/${tablename}.rst"
   echo "	${tablename}/${tablename}" >> index.rst
   ((table_count=table_count+1))
 done
+
+# tar and zip all_tables to create single downloadable version
+tar -cf all_tables.tar ./all_tables/*.csv
+gzip all_tables.tar
+rm -R ./all_tables
 rm *.dat
 popd
 popd
