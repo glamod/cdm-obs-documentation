@@ -15,6 +15,7 @@ Download all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
 	duplicate_status/duplicate_status
 	duration/duration
 	events_at_station/events_at_station
+	feedback_method/feedback_method
 	header_fields/header_fields
 	homogenisation_method/homogenisation_method
 	homogenisation_operator/homogenisation_operator
