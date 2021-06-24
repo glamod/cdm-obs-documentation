@@ -1,5 +1,7 @@
+.. _data-tables:
+
 Data tables
-=================================
+===========
 .. toctree::
 	adjustment/adjustment
 	contact/contact

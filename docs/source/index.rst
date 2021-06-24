@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 GLAMOD Common Data Model (CDM - OBS)
-=============================================
+====================================
 
 .. toctree::
    :maxdepth: 1

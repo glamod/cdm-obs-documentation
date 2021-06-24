@@ -26,10 +26,8 @@ We have also tried to account for the need to extract both the observations and 
 
 An overview is provided on the conceptual data model page, the full data model is given on the data tables and code tables pages.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Jump to:
-
-   conceptual
-   tables/data_tables/index
-   tables/code_tables/index
+Jump to:
+--------
+* :ref:`conceptual`
+* :ref:`data-tables`
+* :ref:`code-tables`

@@ -1,3 +1,5 @@
+.. _conceptual:
+
 Conceptual data model
 =====================
 The figure below shows the conceptual data model used by the common data model, largely building on the ODB v1 data model developed by ECMWF.

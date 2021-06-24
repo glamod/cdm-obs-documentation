@@ -1,5 +1,7 @@
+.. _code-tables:
+
 Code tables
-=================================
+===========
 Download all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
 
 .. toctree::
