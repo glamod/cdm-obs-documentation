@@ -4,7 +4,7 @@ apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz texlive
 
 apt-get -y install software-properties-common
-add-apt-repository universe
+add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
 apt-get update
 apt-get -y install python3-sphinx-autoapi
 
