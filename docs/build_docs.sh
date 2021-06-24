@@ -2,6 +2,7 @@
 
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz texlive
+apt-get -y install python3-sphinx-autpapi
 
 # Build documentation
 # ===================
