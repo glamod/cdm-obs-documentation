@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 apt-get update
-apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz
+apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz texlive
 
 # Build documentation
 # ===================
