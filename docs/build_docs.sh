@@ -1,14 +1,7 @@
 #!/bin/bash
 # update main software
 apt-get update
-apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz texlive gnupg2
-# now add external ubuntu repo for python3-sphinx-api
-apt-get -y install software-properties-common
-apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 871920D1991BC93C
-add-apt-repository "deb http://archive.ubuntu.com/ubuntu hirsute universe"
-apt-get update
-# now install
-apt-get -y install python3-sphinx-autoapi
+apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz texlive
 
 # Build documentation
 # ===================
