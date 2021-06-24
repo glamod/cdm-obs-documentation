@@ -1,0 +1,573 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>era5fb_table &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="header_optional" href="../header_optional/header_optional.html" />
+    <link rel="prev" title="contact" href="../contact/contact.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Data tables</a> &raquo;</li>
+        
+      <li>era5fb_table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/tables/data_tables/era5fb_table/era5fb_table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="era5fb-table">
+<h1>era5fb_table<a class="headerlink" href="#era5fb-table" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">element_name</th>
+<th class="head">kind</th>
+<th class="head">external_table</th>
+<th class="head"><blockquote class="first last">
+<div>description</div></blockquote>
+</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>obs_id</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observation id</td>
+</tr>
+<tr class="row-odd"><td>report_id</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td><a class="reference internal" href="../header_table/header_table.html"><span class="doc">header_table:report_id</span></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>source_id</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td><a class="reference internal" href="../source_configuration/source_configuration.html"><span class="doc">source_configuration:source_id</span></a></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>feedback_method</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td><blockquote class="first last">
+<div><a class="reference internal" href="../../code_tables/feedback_method/feedback_method.html"><span class="doc">feedback_method:method</span></a></div></blockquote>
+</td>
+<td><blockquote class="first last">
+<div>0=online 1=offline</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>type</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - type of field used to retrieve data</td>
+</tr>
+<tr class="row-odd"><td>expver</td>
+<td><blockquote class="first last">
+<div>varchar</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - experiment id</td>
+</tr>
+<tr class="row-even"><td>class</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - ecmwf classification for data</td>
+</tr>
+<tr class="row-odd"><td>stream</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - forecasting system used to generate data</td>
+</tr>
+<tr class="row-even"><td>andate</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>analysis date</td>
+</tr>
+<tr class="row-odd"><td>antime</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>analysis time</td>
+</tr>
+<tr class="row-even"><td>reportype</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - report type for mar</td>
+</tr>
+<tr class="row-odd"><td>seqno&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observation sequence</td>
+</tr>
+<tr class="row-even"><td>source&#64;hdr</td>
+<td><blockquote class="first last">
+<div>varchar</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>source id of obs. (character*8) : re-analysis purposes</td>
+</tr>
+<tr class="row-odd"><td>bufrtype&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>bufr-type</td>
+</tr>
+<tr class="row-even"><td>subtype&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>bufr subtype for reference</td>
+</tr>
+<tr class="row-odd"><td>groupid&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>mars key - observation group</td>
+</tr>
+<tr class="row-even"><td>obstype&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observation type</td>
+</tr>
+<tr class="row-odd"><td>codetype&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observation code type</td>
+</tr>
+<tr class="row-even"><td>sensor&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>ecmwf satellite local (rttov) sensor indicator</td>
+</tr>
+<tr class="row-odd"><td>statid&#64;hdr</td>
+<td><blockquote class="first last">
+<div>varchar</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>station id (character*8)</td>
+</tr>
+<tr class="row-even"><td>date&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>obs. date</td>
+</tr>
+<tr class="row-odd"><td>time&#64;hdr</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>obs. exact time</td>
+</tr>
+<tr class="row-even"><td>report_status&#64;hdr</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>report’s status</td>
+</tr>
+<tr class="row-odd"><td>report_event1&#64;hdr</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>report’s events (part 1)</td>
+</tr>
+<tr class="row-even"><td>report_rdbflag&#64;hdr</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>report’s flags</td>
+</tr>
+<tr class="row-odd"><td>lat&#64;hdr</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>latitude</td>
+</tr>
+<tr class="row-even"><td>lon&#64;hdr</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>longitude</td>
+</tr>
+<tr class="row-odd"><td>lsm&#64;modsurf</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>model land-sea mask</td>
+</tr>
+<tr class="row-even"><td>orography&#64;modsurf</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>model orography</td>
+</tr>
+<tr class="row-odd"><td>windspeed10m&#64;modsurf</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>10 metre wind speed</td>
+</tr>
+<tr class="row-even"><td>sonde_type&#64;conv</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>in order to do bias corr. of temps</td>
+</tr>
+<tr class="row-odd"><td>obsvalue&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observed variable</td>
+</tr>
+<tr class="row-even"><td>varno&#64;body</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>variable number</td>
+</tr>
+<tr class="row-odd"><td>vertco_type&#64;body</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>vertical coordinate type</td>
+</tr>
+<tr class="row-even"><td>vertco_reference_1&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>vertical coordinate reference 1</td>
+</tr>
+<tr class="row-odd"><td>vertco_reference_2&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>vertical coordinate reference 2</td>
+</tr>
+<tr class="row-even"><td>ppcode&#64;conv_body</td>
+<td><blockquote class="first last">
+<div>int</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>pressure code</td>
+</tr>
+<tr class="row-odd"><td>datum_anflag&#64;body</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>observation flags</td>
+</tr>
+<tr class="row-even"><td>datum_status&#64;body</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>new feature equivalent to old def : ‘status status_t’</td>
+</tr>
+<tr class="row-odd"><td>datum_event1&#64;body</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>observation events (part 1)</td>
+</tr>
+<tr class="row-even"><td>datum_rdbflag&#64;body</td>
+<td>bit(32)</td>
+<td>&#160;</td>
+<td>observation flags (rdb)</td>
+</tr>
+<tr class="row-odd"><td>biascorr&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>radiance bias correction</td>
+</tr>
+<tr class="row-even"><td>qc_pge&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>var qc a posteriori probability of gross error</td>
+</tr>
+<tr class="row-odd"><td>an_depar&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observed minus analysed value</td>
+</tr>
+<tr class="row-even"><td>fg_depar&#64;body</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>observed minus first guess value</td>
+</tr>
+<tr class="row-odd"><td>lsm&#64;surfbody_feedback</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>stalt&#64;hdr</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>altitude</td>
+</tr>
+<tr class="row-odd"><td>obs_error&#64;errstat</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>prescribed observation error</td>
+</tr>
+<tr class="row-even"><td>final_obs_error&#64;errstat</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>final observation error (combination of prescribed and persistence errors)</td>
+</tr>
+<tr class="row-odd"><td>fg_error&#64;errstat</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>first guess error</td>
+</tr>
+<tr class="row-even"><td>eda_spread&#64;errstat</td>
+<td><blockquote class="first last">
+<div>numeric</div></blockquote>
+</td>
+<td>&#160;</td>
+<td>(Unscaled) spread from the EDA. The units depend on the data - they are the same as</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../header_optional/header_optional.html" class="btn btn-neutral float-right" title="header_optional" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../contact/contact.html" class="btn btn-neutral float-left" title="contact" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

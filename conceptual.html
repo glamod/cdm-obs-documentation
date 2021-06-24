@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Conceptual data model &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data tables" href="tables/data_tables/index.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conceptual data model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/data_tables/index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Conceptual data model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/conceptual.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="conceptual-data-model">
+<span id="conceptual"></span><h1>Conceptual data model<a class="headerlink" href="#conceptual-data-model" title="Permalink to this headline">¶</a></h1>
+<p>The figure below shows the conceptual data model used by the common data model, largely building on the ODB v1 data model developed by ECMWF.
+Only the primary data tables are shown, there are additional data and code tables but this have been omitted for brevity.
+Within this data model each weather report (or record) is split across two main tables.
+The first, the header table, provides information common to all observations contained in the report.
+Examples include, inter alia, the location and time of the report, the identity of the station, events at the time of the report etc.
+The second table contains the observations, with one observation per row, and including metadata related to how the observation was made and sensor height.
+These two tables are then linked to further configuration tables providing more in depth information on the sensors, stations and sources.
+For those observations from profiles, e.g. radiosonde or ocean profile measurements, further information can be provided via the profile configuraiton table.
+Additional quality control, homogenisation and uncertinty estimates can be provided through the respective tables linked to the observations table.
+Finally, optional information can be provided through the optional tables.</p>
+<p>These tables are described further on the data tables and code tables pages.</p>
+<div class="graphviz"><img src="_images/graphviz-3ba61dda17f7ffbadff908eb38667c4849a80ccc.png" alt="digraph {
+  #node [color=white]
+  node [margin=&quot;0.01&quot; shape=plaintext]
+  rankdir=LR;
+  n1, n2, n3, n4, n5 [style=invis]
+  header_table [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot;&gt;
+                                &lt;TR&gt;&lt;TD PORT=&quot;head&quot; COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot;&gt;header_table&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD PORT=&quot;header&quot;&gt;Header information&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD PORT=&quot;source&quot;&gt;Source information&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+  observations_table [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot;&gt;
+                                &lt;TR&gt;&lt;TD PORT=&quot;head&quot; COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot;&gt;observations_table&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD PORT=&quot;sensor&quot;&gt;Observed parameter and sensor information&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+
+  station_configuration [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;station_configuration&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Detailed information on the station reporting the data.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+Information changes infrequently, required fields expected&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+to be common across reports from different networks or &lt;BR ALIGN=&quot;LEFT&quot;/&gt;observing programmes.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;&lt;BR/&gt;&amp;nbsp;
+&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+Elements will be repeated in the observations tables &lt;BR ALIGN=&quot;left&quot;/&gt;for ease of filtering.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+profile_configuration [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;profile_configuration&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Detailed information on the profile (atmospheric / oceanic).&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+Expected to change with every report. Fields will be&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+dependent on profile type.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+source_configuration [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;source_configuration&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Detailed information on the original source of the data.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+sensor_configuration [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;sensor_configuration&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;
+Detailed information on the instrument / sensor making.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+the observation. Fields reported will depend on variable&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+and observation type.&lt;BR ALIGN=&quot;LEFT&quot;/&gt;&lt;/TD&gt;&lt;/TR&gt;
+                             &lt;/TABLE&gt;&gt;]
+
+qc_fields [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;qc_table&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional information on QC applied to observation.&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+uncertainty_fields [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;uncertainty_fields&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;
+Additional information on uncertainty budget &lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+used to set standard_uncertainty field.&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+
+homogenisation_fields [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;homogenisation_fields&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional information on homogenisation applied to observation.&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+station_config_optional [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;station_configuration_optional&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional optional elements for station_configuration&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+configuration in EAV based table&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+source_config_optional [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;source_configuration_optional&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional optional elements for source_configuration&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+configuration in EAV based table&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+sensor_config_optional [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;sensor_configuration_optional&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional optional elements for sensor_configuration&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+configuration in EAV based table&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+profile_config_optional [label=&lt;&lt;TABLE BORDER=&quot;0&quot; CELLBORDER=&quot;1&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;5&quot; COLOR=&quot;BLACK&quot; WIDTH=&quot;200px&quot;&gt;
+                                &lt;TR&gt;&lt;TD COLSPAN=&quot;1&quot; ALIGN=&quot;center&quot; BGCOLOR=&quot;lightgray&quot; PORT=&quot;head&quot;&gt;profile_configuration_optional&lt;/TD&gt;&lt;/TR&gt;
+                                &lt;TR&gt;&lt;TD&gt;Additional optional elements for profile_configuration&lt;BR ALIGN=&quot;LEFT&quot;/&gt;
+configuration in EAV based table&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&gt;]
+
+
+  {
+    rank=same;
+    header_table;
+    observations_table;
+  }
+
+  n1 -&gt; n2 [arrowtail = dot , arrowhead = crow, dir = both, label = &quot;one to many relationship&quot;];
+  n2 -&gt; n3 [arrowhead = dot , arrowtail = crow, dir = both, label = &quot;many to one relationship&quot;];
+  n4 -&gt; n5 [arrowhead = dot , arrowtail = dot , dir = both, label = &quot;one to one relationship&quot;];
+
+  header_table -&gt; observations_table [arrowtail=dot, arrowhead=crow, dir=both, label=&quot;      &quot;];
+  header_table:header -&gt; station_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:header -&gt; profile_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+  header_table:source -&gt; source_configuration:head [arrowtail=crow, arrowhead=dot, dir=both];
+
+  observations_table:head -&gt; qc_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -&gt; uncertainty_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:head -&gt; homogenisation_fields:head [arrowtail=dot, dir=both, arrowhead=crow];
+  observations_table:sensor -&gt; sensor_configuration:head [arrowtail=crow, dir=both, arrowhead=dot];
+
+  station_configuration:head -&gt; station_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  source_configuration:head -&gt; source_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  profile_configuration:head -&gt; profile_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+  sensor_configuration:head -&gt; sensor_config_optional:head [arrowhead=crow, arrowtail=dot, dir=both];
+}" class="graphviz" /></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tables/data_tables/index.html" class="btn btn-neutral float-right" title="Data tables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

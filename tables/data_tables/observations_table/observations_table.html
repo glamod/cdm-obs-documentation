@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>observations_table &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="organisation" href="../organisation/organisation.html" />
+    <link rel="prev" title="observations_optional" href="../observations_optional/observations_optional.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Data tables</a> &raquo;</li>
+        
+      <li>observations_table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/tables/data_tables/observations_table/observations_table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="observations-table">
+<h1>observations_table<a class="headerlink" href="#observations-table" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">element_name</th>
+<th class="head">kind</th>
+<th class="head">external_table</th>
+<th class="head">description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>observation_id</td>
+<td>varchar (pk)</td>
+<td>&#160;</td>
+<td>unique ID for observation</td>
+</tr>
+<tr class="row-odd"><td>report_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../header_table/header_table.html"><span class="doc">header_table:report_id</span></a></td>
+<td>Link to header information</td>
+</tr>
+<tr class="row-even"><td>data_policy_licence</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_policy_licence/data_policy_licence.html"><span class="doc">data_policy_licence:policy</span></a></td>
+<td>WMOessential, WMOadditional, WMOother</td>
+</tr>
+<tr class="row-odd"><td>date_time</td>
+<td>timestamp with timezone</td>
+<td>&#160;</td>
+<td>timestamp for observation</td>
+</tr>
+<tr class="row-even"><td>date_time_meaning</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/meaning_of_time_stamp/meaning_of_time_stamp.html"><span class="doc">meaning_of_time_stamp:meaning</span></a></td>
+<td>beginning, middle, end</td>
+</tr>
+<tr class="row-odd"><td>observation_duration</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/duration/duration.html"><span class="doc">duration:duration</span></a></td>
+<td>Duration/period over which observation was made</td>
+</tr>
+<tr class="row-even"><td>longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Longitude of the observed value, -180 to 180 (or other as defined by CRS). This may or may not be the same as the report location.</td>
+</tr>
+<tr class="row-odd"><td>latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Latitude of the observed value, -90 to 90 (or other as defined by CRS)</td>
+</tr>
+<tr class="row-even"><td>crs</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/crs/crs.html"><span class="doc">crs:crs</span></a></td>
+<td>Coordinate reference scheme use to encode location</td>
+</tr>
+<tr class="row-odd"><td>z_coordinate</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>z coordinate of observation</td>
+</tr>
+<tr class="row-even"><td>reference_z_coordinate</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>z coordinate of reference observation</td>
+</tr>
+<tr class="row-odd"><td>z_coordinate_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/z_coordinate_type/z_coordinate_type.html"><span class="doc">z_coordinate_type:type</span></a></td>
+<td>Type of z coordinate</td>
+</tr>
+<tr class="row-even"><td>observation_height_above_station_surface</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Height of sensor above local ground or sea surface. Positive values for above surface (e.g. sondes), negative for below (e.g. xbt). For visual observations, height of the visual observing platform.</td>
+</tr>
+<tr class="row-odd"><td>observed_variable</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/observed_variable/observed_variable.html"><span class="doc">observed_variable:variable</span></a></td>
+<td>The variable being observed / measured</td>
+</tr>
+<tr class="row-even"><td>secondary_variable</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/secondary_variable/secondary_variable.html"><span class="doc">secondary_variable:variable</span></a></td>
+<td>Secondary variable required to understand observation, e.g. chemical constituent. Set to NA / missing if not applicable.</td>
+</tr>
+<tr class="row-odd"><td>observation_value</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>The observed value</td>
+</tr>
+<tr class="row-even"><td>value_significance</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/observation_value_significance/observation_value_significance.html"><span class="doc">observation_value_significance:significance</span></a></td>
+<td>e.g. min, max, mean, sum</td>
+</tr>
+<tr class="row-odd"><td>secondary_value</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/secondary_variable/secondary_variable.html"><span class="doc">secondary_variable:value</span></a></td>
+<td>value for the secondary variable. Set to NA or missing if not applicable.</td>
+</tr>
+<tr class="row-even"><td>units</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/units/units.html"><span class="doc">units:units</span></a></td>
+<td>Units for the observed variable</td>
+</tr>
+<tr class="row-odd"><td>code_table</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/observation_code_table/observation_code_table.html"><span class="doc">observation_code_table:code_table</span></a></td>
+<td>Encode / decode table for variable (if encoded)</td>
+</tr>
+<tr class="row-even"><td>conversion_flag</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/conversion_flag/conversion_flag.html"><span class="doc">conversion_flag:flag</span></a></td>
+<td>Flag indicating whether original, converted or both values are available.</td>
+</tr>
+<tr class="row-odd"><td>location_method</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/location_method/location_method.html"><span class="doc">location_method:method</span></a></td>
+<td>Method of determining location,</td>
+</tr>
+<tr class="row-even"><td>location_precision</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Precision to which location is reported (radius km)</td>
+</tr>
+<tr class="row-odd"><td>z_coordinate_method</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/z_coordinate_method/z_coordinate_method.html"><span class="doc">z_coordinate_method:method</span></a></td>
+<td>Method of determining z coordinate</td>
+</tr>
+<tr class="row-even"><td>bbox_min_longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation, valid range given by CRS</td>
+</tr>
+<tr class="row-odd"><td>bbox_max_longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation, valid range given by CRS</td>
+</tr>
+<tr class="row-even"><td>bbox_min_latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation, valid range given by CRS</td>
+</tr>
+<tr class="row-odd"><td>bbox_max_latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation, valid range given by CRS</td>
+</tr>
+<tr class="row-even"><td>spatial_representativeness</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/spatial_representativeness/spatial_representativeness.html"><span class="doc">spatial_representativeness:representativeness</span></a></td>
+<td>Spatial representativeness of observation</td>
+</tr>
+<tr class="row-odd"><td>quality_flag</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/quality_flag/quality_flag.html"><span class="doc">quality_flag:flag</span></a></td>
+<td>Quality flag for observation</td>
+</tr>
+<tr class="row-even"><td>numerical_precision</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Reporting precision of observation in units given by ‘units’ variable. E.g. 0.1 = reported to nearest tenth, 0.5 to nearest half etc.</td>
+</tr>
+<tr class="row-odd"><td>sensor_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../sensor_configuration/sensor_configuration.html"><span class="doc">sensor_configuration:sensor_id</span></a></td>
+<td><blockquote class="first last">
+<div>Link to sensor_configuration table.</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>reference_sensor_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../sensor_configuration/sensor_configuration.html"><span class="doc">sensor_configuration:sensor_id</span></a></td>
+<td><blockquote class="first last">
+<div>Link to sensor_configuration table for reference sensor.</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>sensor_automation_status</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/automation_status/automation_status.html"><span class="doc">automation_status:automation</span></a></td>
+<td>Automated, manual, mixed or visual observation</td>
+</tr>
+<tr class="row-even"><td>exposure_of_sensor</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/instrument_exposure_quality/instrument_exposure_quality.html"><span class="doc">instrument_exposure_quality:exposure</span></a></td>
+<td>Whether the exposure of the instrument will impact on the quality of the measurement</td>
+</tr>
+<tr class="row-odd"><td>original_precision</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Original reporting precision in units given by ‘original_units’</td>
+</tr>
+<tr class="row-even"><td>original_units</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/units/units.html"><span class="doc">units:units</span></a></td>
+<td>Original units</td>
+</tr>
+<tr class="row-odd"><td>original_code_table</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/observation_code_table/observation_code_table.html"><span class="doc">observation_code_table:code_table</span></a></td>
+<td>Encode / decode table for variable (if encoded)</td>
+</tr>
+<tr class="row-even"><td>original_value</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Original value as reported or recorded in log book.</td>
+</tr>
+<tr class="row-odd"><td>conversion_method</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/conversion_method/conversion_method.html"><span class="doc">conversion_method:method</span></a></td>
+<td>Link to table describing conversion process</td>
+</tr>
+<tr class="row-even"><td>processing_code</td>
+<td>int[]*</td>
+<td><a class="reference internal" href="../../code_tables/processing_code/processing_code.html"><span class="doc">processing_code:code</span></a></td>
+<td>e.g. TRC (temperature radiation corrections) etc. Encoded in table.</td>
+</tr>
+<tr class="row-odd"><td>processing_level</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/processing_level/processing_level.html"><span class="doc">processing_level:level</span></a></td>
+<td>Level of processing applied to observation.</td>
+</tr>
+<tr class="row-even"><td>adjustment_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../adjustment/adjustment.html"><span class="doc">adjustment:adjustment_id</span></a></td>
+<td>Total adjustment applied to observation reported in observation value (observation_value = original + adjustment)</td>
+</tr>
+<tr class="row-odd"><td>traceability</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/traceability/traceability.html"><span class="doc">traceability:traceability</span></a></td>
+<td>Whether observation can be traced to international standards.</td>
+</tr>
+<tr class="row-even"><td>advanced_qc</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_present/data_present.html"><span class="doc">data_present:flag</span></a></td>
+<td>Flag indicating whether advanced qc data are available</td>
+</tr>
+<tr class="row-odd"><td>advanced_uncertainty</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_present/data_present.html"><span class="doc">data_present:flag</span></a></td>
+<td>Flag indicating whether uncertainty estimates are available</td>
+</tr>
+<tr class="row-even"><td>advanced_homogenisation</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_present/data_present.html"><span class="doc">data_present:flag</span></a></td>
+<td>Flag indicating whether advanced homogenisation information is available</td>
+</tr>
+<tr class="row-odd"><td>advanced_assimilation_feedback</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_present/data_present.html"><span class="doc">data_present:flag</span></a></td>
+<td>Flag indicating whether assimilation feedback is available</td>
+</tr>
+<tr class="row-even"><td>source_id</td>
+<td><blockquote class="first last">
+<div>varchar</div></blockquote>
+</td>
+<td><a class="reference internal" href="../source_configuration/source_configuration.html"><span class="doc">source_configuration:source_id</span></a></td>
+<td>Original source of data, link to external table</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../organisation/organisation.html" class="btn btn-neutral float-right" title="organisation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../observations_optional/observations_optional.html" class="btn btn-neutral float-left" title="observations_optional" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

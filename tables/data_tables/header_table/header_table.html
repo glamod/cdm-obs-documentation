@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>header_table &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="homogenisation_table" href="../homogenisation_table/homogenisation_table.html" />
+    <link rel="prev" title="header_optional" href="../header_optional/header_optional.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Data tables</a> &raquo;</li>
+        
+      <li>header_table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/tables/data_tables/header_table/header_table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="header-table">
+<h1>header_table<a class="headerlink" href="#header-table" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">element_name</th>
+<th class="head">kind</th>
+<th class="head">external_table</th>
+<th class="head">description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>report_id</td>
+<td>varchar (pk)</td>
+<td>&#160;</td>
+<td>Unique ID for report (unique ID given by combination of report_id and observation_id)</td>
+</tr>
+<tr class="row-odd"><td>region</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/region/region.html"><span class="doc">region:region</span></a></td>
+<td>Region (WMO region / Ocean basin)</td>
+</tr>
+<tr class="row-even"><td>sub_region</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/sub_region/sub_region.html"><span class="doc">sub_region:sub_region</span></a></td>
+<td>Country / regional sea</td>
+</tr>
+<tr class="row-odd"><td>application_area</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/application_area/application_area.html"><span class="doc">application_area:application_area</span></a></td>
+<td>WMO application area(s)</td>
+</tr>
+<tr class="row-even"><td>observing_programme</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/observing_programme/observing_programme.html"><span class="doc">observing_programme:observing_programme</span></a></td>
+<td>Observing programme, e.g. VOS</td>
+</tr>
+<tr class="row-odd"><td>report_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/report_type/report_type.html"><span class="doc">report_type:type</span></a></td>
+<td>e.g. SYNOP, TEMP, CLIMAT, etc</td>
+</tr>
+<tr class="row-even"><td>station_name</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>e.g. GRUAN station name, ship name, site name etc</td>
+</tr>
+<tr class="row-odd"><td>station_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/station_type/station_type.html"><span class="doc">station_type:type</span></a></td>
+<td>Type of station, e.g. land station, sea station etc</td>
+</tr>
+<tr class="row-even"><td>platform_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/platform_type/platform_type.html"><span class="doc">platform_type:type</span></a></td>
+<td>Structure upon which sensor is mounted, e.g. ship, drifting buoy, tower etc</td>
+</tr>
+<tr class="row-odd"><td>platform_sub_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/platform_sub_type/platform_sub_type.html"><span class="doc">platform_sub_type:sub_type</span></a></td>
+<td>Sub-type for platform, e.g. 3m discuss buoy</td>
+</tr>
+<tr class="row-even"><td>primary_station_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../station_configuration/station_configuration.html"><span class="doc">station_configuration:primary_id</span></a></td>
+<td>Primary station identifier, e.g. WIGOS ID</td>
+</tr>
+<tr class="row-odd"><td>station_record_number</td>
+<td>int</td>
+<td><a class="reference internal" href="../station_configuration/station_configuration.html"><span class="doc">station_configuration:record_number</span></a></td>
+<td>Together with primary_station_id this forms a link to the station configuration table.</td>
+</tr>
+<tr class="row-even"><td>primary_station_id_scheme</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/id_scheme/id_scheme.html"><span class="doc">id_scheme:scheme</span></a></td>
+<td>Scheme used for station ID</td>
+</tr>
+<tr class="row-odd"><td>longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Longitude of station, -180.0 to 180.0 (or other as defined by station_crs)</td>
+</tr>
+<tr class="row-even"><td>latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Latitude of station, -90 to 90 (or other as defined by station_crs)</td>
+</tr>
+<tr class="row-odd"><td>location_accuracy</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Accuracy to which station location recorded (radius in km)</td>
+</tr>
+<tr class="row-even"><td>location_method</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/location_method/location_method.html"><span class="doc">location_method:method</span></a></td>
+<td>Method by which location determined</td>
+</tr>
+<tr class="row-odd"><td>location_quality</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/location_quality/location_quality.html"><span class="doc">location_quality:quality</span></a></td>
+<td>Quality flag for station location</td>
+</tr>
+<tr class="row-even"><td>crs</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/crs/crs.html"><span class="doc">crs:crs</span></a></td>
+<td>Coordinate reference scheme for station location</td>
+</tr>
+<tr class="row-odd"><td>station_speed</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Station speed over ground if mobile (m/s)</td>
+</tr>
+<tr class="row-even"><td>station_course</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Station course over ground if mobile (degree true)</td>
+</tr>
+<tr class="row-odd"><td>station_heading</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Station heading if mobile</td>
+</tr>
+<tr class="row-even"><td>height_of_station_above_local_ground</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Height of station above local ground (m)</td>
+</tr>
+<tr class="row-odd"><td>height_of_station_above_sea_level</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Height of station above mean sea level (m), negative values for below sea level.</td>
+</tr>
+<tr class="row-even"><td>height_of_station_above_sea_level_accuracy</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Accuracy to which height of station known (m)</td>
+</tr>
+<tr class="row-odd"><td>sea_level_datum</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/sea_level_datum/sea_level_datum.html"><span class="doc">sea_level_datum:datum</span></a></td>
+<td>Datum used for sea level</td>
+</tr>
+<tr class="row-even"><td>report_meaning_of_timestamp</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/meaning_of_time_stamp/meaning_of_time_stamp.html"><span class="doc">meaning_of_time_stamp:meaning</span></a></td>
+<td>Report time - beginning, middle or end of reporting period</td>
+</tr>
+<tr class="row-odd"><td>report_timestamp</td>
+<td>timestamp with timezone</td>
+<td>&#160;</td>
+<td>e.g. 1991-01-01 12:00:0.0+0</td>
+</tr>
+<tr class="row-even"><td>report_duration</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/duration/duration.html"><span class="doc">duration:duration</span></a></td>
+<td>Report duration</td>
+</tr>
+<tr class="row-odd"><td>report_time_accuracy</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Precision to which time was recorded (s)</td>
+</tr>
+<tr class="row-even"><td>report_time_quality</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/time_quality/time_quality.html"><span class="doc">time_quality:quality</span></a></td>
+<td>Quality flag for report_timestamp</td>
+</tr>
+<tr class="row-odd"><td>report_time_reference</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/time_reference/time_reference.html"><span class="doc">time_reference:reference</span></a></td>
+<td>Reference Time (e.g. referenced to time server, atomic clock, radio clock etc)</td>
+</tr>
+<tr class="row-even"><td>profile_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../profile_configuration/profile_configuration.html"><span class="doc">profile_configuration:profile_id</span></a></td>
+<td>Information on profile (atmospheric / oceanographic) configuration. Set to Record ID for profile data or missing (NULL) otherwise.</td>
+</tr>
+<tr class="row-odd"><td>events_at_station</td>
+<td>int[]*</td>
+<td><a class="reference internal" href="../../code_tables/events_at_station/events_at_station.html"><span class="doc">events_at_station:event</span></a></td>
+<td>e.g. ship hove to, crop burning etc.</td>
+</tr>
+<tr class="row-even"><td>report_quality</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/quality_flag/quality_flag.html"><span class="doc">quality_flag:flag</span></a></td>
+<td>Overall quality of report</td>
+</tr>
+<tr class="row-odd"><td>duplicate_status</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/duplicate_status/duplicate_status.html"><span class="doc">duplicate_status:status</span></a></td>
+<td>E.g. no duplicates, best duplicate, duplicate, not checked.</td>
+</tr>
+<tr class="row-even"><td>duplicates</td>
+<td>varchar[]*</td>
+<td><a class="reference internal" href="#"><span class="doc">header_table:report_id</span></a></td>
+<td>Array of report_id’s for duplicates</td>
+</tr>
+<tr class="row-odd"><td>record_timestamp</td>
+<td>timestamp with timezone</td>
+<td>&#160;</td>
+<td>Timestamp of revision for this record</td>
+</tr>
+<tr class="row-even"><td>history</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Sequence of processing steps. Free text with timestamp 1 : history 1; timestamp 2 : history 2 etc.</td>
+</tr>
+<tr class="row-odd"><td>processing_level</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/report_processing_level/report_processing_level.html"><span class="doc">report_processing_level:level</span></a></td>
+<td>Level of processing applied to this report</td>
+</tr>
+<tr class="row-even"><td>processing_codes</td>
+<td>int[]*</td>
+<td><a class="reference internal" href="../../code_tables/report_processing_codes/report_processing_codes.html"><span class="doc">report_processing_codes:code</span></a></td>
+<td>Processing applied to this report</td>
+</tr>
+<tr class="row-odd"><td>source_id</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../source_configuration/source_configuration.html"><span class="doc">source_configuration:source_id</span></a></td>
+<td>Original source of data, link to external table</td>
+</tr>
+<tr class="row-even"><td>source_record_id</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Record ID in source data, e.g. ID of event from GRUAN meta database</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../homogenisation_table/homogenisation_table.html" class="btn btn-neutral float-right" title="homogenisation_table" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../header_optional/header_optional.html" class="btn btn-neutral float-left" title="header_optional" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
