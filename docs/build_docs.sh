@@ -8,7 +8,6 @@ apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme graphviz te
 make -C ./docs clean # clean previous version
 #./build_tables.sh # we need to update code tables (this pulls tables from another repo, converts etc)
 make -C ./docs html # now build the docs
-make -C ./docs latexpdf
 # setup environment
 # =================
 git config --global user.name "${GITHUB_ACTOR}"
