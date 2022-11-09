@@ -25,7 +25,7 @@ For example, at the time of initial development the code tables included in this
 We have also tried to account for the need to extract both the observations and metadata into different standards, for example it should be possible to map the data contained in the data model to the ISO19135 and ISO19139 standards.
 
 An overview is provided on the conceptual data model page, the full data model is given on the data tables
-and code tables pages. (dbtest)
+and code tables pages.
 
 Jump to:
 --------
