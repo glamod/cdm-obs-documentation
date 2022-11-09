@@ -24,7 +24,8 @@ Where possible, we have tried to keep the vocabulary used in existing standards.
 For example, at the time of initial development the code tables included in this data model were directly linked to those from the WIGOS Metadata Standard (WMDS) and BUFR but it should be noted that some of these may have since changed (particularly the WMDS).
 We have also tried to account for the need to extract both the observations and metadata into different standards, for example it should be possible to map the data contained in the data model to the ISO19135 and ISO19139 standards.
 
-An overview is provided on the conceptual data model page, the full data model is given on the data tables and code tables pages.
+An overview is provided on the conceptual data model page, the full data model is given on the data tables
+and code tables pages. (dbtest)
 
 Jump to:
 --------
