@@ -141,7 +141,7 @@ variable,parameter_group,domain,sub_domain,name,units,description
 152,,atmospheric,upper-air,total ozone column ,DU,Ozone (DU) integrated up to the current altitude level
 153,,atmospheric,upper-air,flight summary integrated O3,DU,Ozone amount integrated over the whole balloon profile.
 154,,,,sampling method burst ozone pressure,Pa,Atmospheric pressure when balloon burst in hPa.
-155,lidar,atmospheric,,measurement_wavelenght,nm,Wavelength of the transmitted laser pulse
+155,lidar,atmospheric,,measurement_wavelength,nm,Wavelength of the transmitted laser pulse
 156,lidar,atmospheric,,integrated_backscatter,1/sr,integrated backscatter
 157,lidar,atmospheric,,lidar_ratio,sr,aerosol extinction-to-backscatter ratio
 158,lidar,atmospheric,,aerosol_boundary_layer,m,altitude of the upper bound of the aerosol planet boundary layer
