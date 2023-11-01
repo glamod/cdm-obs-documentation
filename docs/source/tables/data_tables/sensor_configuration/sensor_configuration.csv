@@ -1,10 +1,11 @@
-"element_name","type","external_table","description"
-"sensor_id","varchar (pk)","","Unique ID for this instrument"
-"observing_method","int",":doc:`observing_method:method</tables/code_tables/observing_method/observing_method>`","Method (instrumental, estimated / visual, computed) by which observation made"
-"sampling_strategy","int",":doc:`sampling_strategy:strategy</tables/code_tables/sampling_strategy/sampling_strategy>`","Sampling strategy used by instrument"
-"calibration_status","int",":doc:`calibration_status:status</tables/code_tables/calibration_status/calibration_status>`","Whether the sensor is in / out of calibration"
-"calibration_date","timestamp","","Date of last calibration"
-"comments","varchar","","additional comments for sensor not reportable elsewhere"
-"date_start","timestamp","","start date for period of validity assoiciated with this entry"
-"date_end","timestamp","","end date for period of validity assoiciated with this entry"
-"optional_data","int",":doc:`data_present:flag</tables/code_tables/data_present/data_present>`","Flag indicating if additional data available"
+element_name,type,external_table,description
+sensor_id,varchar (pk),,Unique ID for this instrument
+observing_method,int,:doc:`observing_method:method</tables/code_tables/observing_method/observing_method>`,"Method (instrumental, estimated / visual, computed) by which observation made"
+instrument_type ,int,instrument_type ,The manufacturer and model of instrument used (where known)
+sampling_strategy,int,:doc:`sampling_strategy:strategy</tables/code_tables/sampling_strategy/sampling_strategy>`,Sampling strategy used by instrument
+calibration_status,int,:doc:`calibration_status:status</tables/code_tables/calibration_status/calibration_status>`,Whether the sensor is in / out of calibration
+calibration_date,timestamp,,Date of last calibration
+comments,varchar,,additional comments for sensor not reportable elsewhere
+date_start,timestamp,,start date for period of validity assoiciated with this entry
+date_end,timestamp,,end date for period of validity assoiciated with this entry
+optional_data,int,:doc:`data_present:flag</tables/code_tables/data_present/data_present>`,Flag indicating if additional data available
