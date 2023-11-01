@@ -22,7 +22,8 @@ Download all tables (tar.gz) :download:`all_tables.tar.gz <all_tables.tar.gz>`
 	homogenisation_method/homogenisation_method
 	homogenisation_operator/homogenisation_operator
 	id_scheme/id_scheme
-	instrument_exposure_quality/instrument_exposure_quality/instrument_type
+	instrument_exposure_quality/instrument_exposure_quality
+	instrument_type/instrument_type
 	kind/kind
 	location_method/location_method
 	location_quality/location_quality

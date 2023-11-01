@@ -1,7 +1,7 @@
 element_name,type,external_table,description
 sensor_id,varchar (pk),,Unique ID for this instrument
 observing_method,int,:doc:`observing_method:method</tables/code_tables/observing_method/observing_method>`,"Method (instrumental, estimated / visual, computed) by which observation made"
-instrument_type ,int,instrument_type ,The manufacturer and model of instrument used (where known)
+instrument_type ,int,:doc:`instrument_type:instrument</tables/code_tables/instrument_type/instrument_type>`,The manufacturer and model of instrument used (where known)
 sampling_strategy,int,:doc:`sampling_strategy:strategy</tables/code_tables/sampling_strategy/sampling_strategy>`,Sampling strategy used by instrument
 calibration_status,int,:doc:`calibration_status:status</tables/code_tables/calibration_status/calibration_status>`,Whether the sensor is in / out of calibration
 calibration_date,timestamp,,Date of last calibration
