@@ -1,18 +1,18 @@
 Identifier,Instrument used
 0,Reserved
 1,iMet-1-BB (United States)
-2,No radiosonde – passive target (e.g. reflector)
-3,No radiosonde – active target (e.g. transponder)
-4,No radiosonde – passive temperature-humidity profiler
-5,No radiosonde – active temperature-humidity profiler
-6,No radiosonde – radio-acoustic sounder
+2,No radiosonde - passive target (e.g. reflector)
+3,No radiosonde - active target (e.g. transponder)
+4,No radiosonde - passive temperature-humidity profiler
+5,No radiosonde - active temperature-humidity profiler
+6,No radiosonde - radio-acoustic sounder
 7,iMet-1-AB (United States)
-8,No radiosonde – . . . (reserved)
-9,No radiosonde – system unknown or not specified
+8,No radiosonde - . . . (reserved)
+9,No radiosonde - system unknown or not specified
 10,VIZ type A pressure-commutated (United States)
 11,VIZ type B time-commutated (United States)
-12,RS SDC (Space Data Corporation – United States)
-13,Astor (no longer made – Australia)
+12,RS SDC (Space Data Corporation - United States)
+13,Astor (no longer made - Australia)
 14,VIZ MARK I MICROSONDE (United States)
 15,EEC Company type 23 (United States)
 16,Elin (Austria)
@@ -42,21 +42,21 @@ Identifier,Instrument used
 40,Sprenger E084 (Germany)
 41,Sprenger E085 (Germany)
 42,Sprenger E086 (Germany)
-43,AIR IS – 4A – 1680 (United States)
-44,AIR IS – 4A – 1680 X (United States)
+43,AIR IS - 4A - 1680 (United States)
+44,AIR IS - 4A - 1680 X (United States)
 45,RS MSS (United States)
-46,AIR IS – 4A – 403 (United States)
+46,AIR IS - 4A - 403 (United States)
 47,Meisei RS2-91 (Japan)
 48,VALCOM (Canada)
 49,VIZ MARK II (United States)
 50,Graw DFM-90 (Germany)
-51,VIZ–B2 (United States)
+51,VIZ-B2 (United States)
 52,Vaisala RS80-57H
 53,AVK-RF95 (Russian Federation)
 54,Graw DFM-97 (Germany)
 55,Meisei RS-01G (Japan)
 56,M2K2 (France)
-57,Modem M2K2–DC (France)
+57,Modem M2K2-DC (France)
 58,AVK-BAR (Russian Federation)
 59,Modem M2K2-R 1680 MHz RDF radiosonde with pressure sensor chip (France)
 60,Vaisala RS80/MicroCora (Finland)
@@ -64,14 +64,14 @@ Identifier,Instrument used
 62,Vaisala RS80/PCCora (Finland)
 63,Vaisala RS80/Star (Finland)
 64,"Orbital Sciences Corporation, Space Data Division, transponder radiosonde, type 909-11-XX, where XX corresponds to the model of the instrument (United States)"
-65,"VIZ transponder radiosonde, model number 1499–520 (United States)"
+65,"VIZ transponder radiosonde, model number 1499-520 (United States)"
 66,Vaisala RS80/Autosonde (Finland)
 67,Vaisala RS80/Digicora III (Finland)
 68,AVK-RZM-2 (Russian Federation)
 69,MARL-A or Vektor-M-RZM-2 (Russian Federation)
 70,Vaisala RS92/Star (Finland)
 71,"Vaisala RS90/Loran/Digicora I, II or Marwin (Finland)"
-72,Vaisala RS90/PC–Cora (Finland)
+72,Vaisala RS90/PC-Cora (Finland)
 73,Vaisala RS90/Autosonde (Finland)
 74,Vaisala RS90/Star (Finland)
 75,AVK-MRZ-ARMA (Russian Federation)
@@ -114,8 +114,8 @@ Identifier,Instrument used
 124,Vaisala RS41/AUTOSONDE (Finland)
 125,Vaisala RS41/MARWIN MW32 (Finland)
 126,Meteolabor SRS-C34/Argus 37 (Switzerland)
-128,AVK – AK2-02 (Russian Federation)
-129,MARL-A or Vektor-M – AK2-02 (Russian Federation)
+128,AVK - AK2-02 (Russian Federation)
+129,MARL-A or Vektor-M - AK2-02 (Russian Federation)
 130,Meisei RS-06G (Japan)
 131,Taiyuan GTS1-1/GFE(L) (China )
 132,Shanghai GTS1/GFE(L) (China)
@@ -131,13 +131,13 @@ Identifier,Instrument used
 148,PAZA-22M/MARL-A
 150,Meteolabor SRS-C50/Argus (Switzerland)
 152,Vaisala RS92-NGP/Intermet IMS-2000 (United States)
-153,AVK – I-2012 (Russian Federation)
+153,AVK - I-2012 (Russian Federation)
 154,Graw DFM-17 (Germany)
-160,MARL-A or Vektor-M – I-2012 (Russian Federation)
-162,MARL-A or Vektor-M – MRZ-3MK (Russian Federation)
+160,MARL-A or Vektor-M - I-2012 (Russian Federation)
+162,MARL-A or Vektor-M - MRZ-3MK (Russian Federation)
 163,"Modem M20 radiosonde w/thermistor sensor, capacitance relative humidity sensor, and derived pressure from GPS height (France)"
 164,Modem PilotSonde GPS radiosonde (France)
-173,MARL-A (Russian Federation) – ASPAN-15 (Kazakhstan)
+173,MARL-A (Russian Federation) - ASPAN-15 (Kazakhstan)
 177,Modem GPSonde M10 (France)
 182,Lockheed Martin LMS-6 w/chip thermistor; external boom mounted polymer capacitive relative humidity sensor; capacitive pressure sensor and GPS wind
 183,"Vaisala RS92-D/Intermet IMS 1500 w/silicon capacitive pressure sensor, capacitive wire temperature sensor, twin thin-film heated polymer capacitive relative humidity sensor and RDF wind"
