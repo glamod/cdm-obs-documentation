@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>station_configuration &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="station_configuration_optional" href="../station_configuration_optional/station_configuration_optional.html" />
+    <link rel="prev" title="source_configuration_optional" href="../source_configuration_optional/source_configuration_optional.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Data tables</a> &raquo;</li>
+        
+      <li>station_configuration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/tables/data_tables/station_configuration/station_configuration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="station-configuration">
+<h1>station_configuration<a class="headerlink" href="#station-configuration" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">element_name</th>
+<th class="head">type</th>
+<th class="head">external_table</th>
+<th class="head">description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>primary_id</td>
+<td>varchar (pk)</td>
+<td>&#160;</td>
+<td>Primary (e.g. WMO) ID for station</td>
+</tr>
+<tr class="row-odd"><td>primary_id_scheme</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/id_scheme/id_scheme.html"><span class="doc">id_scheme:scheme</span></a></td>
+<td>Scheme used for primary ID</td>
+</tr>
+<tr class="row-even"><td>record_number</td>
+<td>int (pk)</td>
+<td>&#160;</td>
+<td>Record number for this station entry</td>
+</tr>
+<tr class="row-odd"><td>secondary_id</td>
+<td>varchar[]*</td>
+<td>&#160;</td>
+<td>Secondary (e.g. local) ID for station</td>
+</tr>
+<tr class="row-even"><td>secondary_id_scheme</td>
+<td>int[]*</td>
+<td><a class="reference internal" href="../../code_tables/id_scheme/id_scheme.html"><span class="doc">id_scheme:scheme</span></a></td>
+<td>Scheme used for secondary ID</td>
+</tr>
+<tr class="row-odd"><td>station_name</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Name of station (e.g. Tateno)</td>
+</tr>
+<tr class="row-even"><td>station_abbreviation</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Abbreviation of station name (e.g. TAT)</td>
+</tr>
+<tr class="row-odd"><td>alternative_name</td>
+<td>varchar[]*</td>
+<td>&#160;</td>
+<td><blockquote class="first last">
+<div>Alternative name for station</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>station_crs</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/crs/crs.html"><span class="doc">crs:crs</span></a></td>
+<td>coordinate reference system used to report stations location</td>
+</tr>
+<tr class="row-odd"><td>longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Report position for station if stationary or NULL if mobile. If more than one estimate record best here and additional values using optional fields.</td>
+</tr>
+<tr class="row-even"><td>latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Report position for station if stationary or NULL if mobile</td>
+</tr>
+<tr class="row-odd"><td>local_gravity</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Local gravity at station location (units ms-2)</td>
+</tr>
+<tr class="row-even"><td>start_date</td>
+<td>timestamp</td>
+<td>&#160;</td>
+<td>Date that the station first started reporting in this configuration</td>
+</tr>
+<tr class="row-odd"><td>end_date</td>
+<td>timestamp</td>
+<td>&#160;</td>
+<td>Last data the station reported in this configuration</td>
+</tr>
+<tr class="row-even"><td>station_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/station_type/station_type.html"><span class="doc">station_type:type</span></a></td>
+<td>Type of reporting station</td>
+</tr>
+<tr class="row-odd"><td>platform_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/platform_type/platform_type.html"><span class="doc">platform_type:type</span></a></td>
+<td>Generic type of observing platform</td>
+</tr>
+<tr class="row-even"><td>platform_sub_type</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/platform_sub_type/platform_sub_type.html"><span class="doc">platform_sub_type:sub_type</span></a></td>
+<td>Specific type of observing platform</td>
+</tr>
+<tr class="row-odd"><td>operating_institute</td>
+<td>varchar</td>
+<td><a class="reference internal" href="../organisation/organisation.html"><span class="doc">organisation:organisation_id</span></a></td>
+<td>Institute operating the station (e.g. National Oceanography Centre)</td>
+</tr>
+<tr class="row-even"><td>operating_territory</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/sub_region/sub_region.html"><span class="doc">sub_region:sub_region</span></a></td>
+<td>Sub-region where station is located or country of registry for mobile station</td>
+</tr>
+<tr class="row-odd"><td>city</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Nearest city / town to station location</td>
+</tr>
+<tr class="row-even"><td>contact</td>
+<td>varchar[]</td>
+<td><a class="reference internal" href="../contact/contact.html"><span class="doc">contact:contact_id</span></a></td>
+<td>Contact for station</td>
+</tr>
+<tr class="row-odd"><td>role</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/role/role.html"><span class="doc">role:role</span></a></td>
+<td>Role of contact</td>
+</tr>
+<tr class="row-even"><td>observing_frequency</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/observing_frequency/observing_frequency.html"><span class="doc">observing_frequency:frequency</span></a></td>
+<td>Typical frequency of observations for this station (reports per day). If irregular use reporting_time.</td>
+</tr>
+<tr class="row-odd"><td>reporting_time</td>
+<td>int[]</td>
+<td>&#160;</td>
+<td>Reporting hour(s) if non-standard / irregular hours used</td>
+</tr>
+<tr class="row-even"><td>telecommunication_method</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/communication_method/communication_method.html"><span class="doc">communication_method:method</span></a></td>
+<td>Method used to report observations</td>
+</tr>
+<tr class="row-odd"><td>station_automation</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/automation_status/automation_status.html"><span class="doc">automation_status:automation</span></a></td>
+<td>Whether station is automated, manual or mixed</td>
+</tr>
+<tr class="row-even"><td>measuring_system_model</td>
+<td>varchar[]</td>
+<td>&#160;</td>
+<td>Station / AWS model type</td>
+</tr>
+<tr class="row-odd"><td>measuring_system_id</td>
+<td>varchar[]</td>
+<td>&#160;</td>
+<td>ID or serial number of measuring system</td>
+</tr>
+<tr class="row-even"><td>observed_variables</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/observed_variable/observed_variable.html"><span class="doc">observed_variable:variable</span></a></td>
+<td>array indicating which variables are observed by this station</td>
+</tr>
+<tr class="row-odd"><td>comment</td>
+<td>varchar</td>
+<td>&#160;</td>
+<td>Any other comments / footnotes</td>
+</tr>
+<tr class="row-even"><td>optional_data</td>
+<td>int</td>
+<td><a class="reference internal" href="../../code_tables/data_present/data_present.html"><span class="doc">data_present:flag</span></a></td>
+<td>Flag indicating availability of additional data</td>
+</tr>
+<tr class="row-odd"><td>bbox_min_longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation from this station, valid range given by CRS</td>
+</tr>
+<tr class="row-even"><td>bbox_max_longitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation from this station, valid range given by CRS</td>
+</tr>
+<tr class="row-odd"><td>bbox_min_latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation from this station, valid range given by CRS</td>
+</tr>
+<tr class="row-even"><td>bbox_max_latitude</td>
+<td>numeric</td>
+<td>&#160;</td>
+<td>Bounding box for observation from this station, valid range given by CR</td>
+</tr>
+<tr class="row-odd"><td>metadata_contact</td>
+<td>varchar[]</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../contact/contact.html"><span class="doc">contact:contact_id</span></a>      contact for responsible for maintaing this record</td>
+</tr>
+<tr class="row-even"><td>metadata_contact_role</td>
+<td>int[]</td>
+<td><a class="reference internal" href="../../code_tables/role/role.html"><span class="doc">role:role</span></a></td>
+<td>role of metadata_contact</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../station_configuration_optional/station_configuration_optional.html" class="btn btn-neutral float-right" title="station_configuration_optional" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../source_configuration_optional/source_configuration_optional.html" class="btn btn-neutral float-left" title="source_configuration_optional" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; common_data_model 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Conceptual data model" href="conceptual.html" />
+    <link rel="prev" title="GLAMOD Common Data Model (CDM - OBS)" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> common_data_model
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceptual.html">Conceptual data model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/data_tables/index.html">Data tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/code_tables/index.html">Code tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">common_data_model</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This site documents a common data model for in situ climate observations (CDM-Obs) developed as part of the C3S 311a and C3S 311c services.
+Whilst hosted by the GLAMOD organisation on GitHub the site has been developed outside of the C3S services and is an unofficial resource.
+The main repository for the common data model can be found at: <a class="reference external" href="https://github.com/glamod/common_data_model">https://github.com/glamod/common_data_model</a>.
+The pdf documentation is also provided as part of this repository <a class="reference external" href="https://github.com/glamod/common_data_model/blob/master/cdm_latest.pdf">https://github.com/glamod/common_data_model/blob/master/cdm_latest.pdf</a>.</p>
+<p>The data model developed is intended to provide a single harmonised model and vocabulary for in situ meteorological observations provided through the C3S services.
+This includes both meteorological observations made at the surface and observations made throughout the atmosphere.
+The model is intended to be flexible enough to also include oceanographic observations.
+Throughout this site, and the original documentation, the following terms have been used:</p>
+<ul class="simple">
+<li><em>weather report</em>: a collection of observations made at (or close to) the same point in time and included in a single message.</li>
+<li><em>observation</em>: an observed or measured value of a single parameter or measurand.</li>
+</ul>
+<p>The starting point for the data model was the ODBv1 data model developed by ECMWF.
+However, this has been significantly modified and expanded to include comprehensive provenance, discovery and instrumental metadata.
+Within the data model the weather reports are split across two different record types following the ODBv1 approach.
+Header records provide information common to all observations within a weather report.
+Linked records contain the observations, with a single measurand or observed variable per record.
+Additional linked records contain the metadata.
+Where possible, we have tried to keep the vocabulary used in existing standards.
+For example, at the time of initial development the code tables included in this data model were directly linked to those from the WIGOS Metadata Standard (WMDS) and BUFR but it should be noted that some of these may have since changed (particularly the WMDS).
+We have also tried to account for the need to extract both the observations and metadata into different standards, for example it should be possible to map the data contained in the data model to the ISO19135 and ISO19139 standards.</p>
+<p>An overview is provided on the conceptual data model page, the full data model is given on the data tables
+and code tables pages.</p>
+<div class="section" id="jump-to">
+<h2>Jump to:<a class="headerlink" href="#jump-to" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="conceptual.html#conceptual"><span class="std std-ref">Conceptual data model</span></a></li>
+<li><a class="reference internal" href="tables/data_tables/index.html#data-tables"><span class="std std-ref">Data tables</span></a></li>
+<li><a class="reference internal" href="tables/code_tables/index.html#code-tables"><span class="std std-ref">Code tables</span></a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="conceptual.html" class="btn btn-neutral float-right" title="Conceptual data model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="GLAMOD Common Data Model (CDM - OBS)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, David I. Berry
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
